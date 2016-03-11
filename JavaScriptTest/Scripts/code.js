@@ -15,6 +15,7 @@ function getPowerBI()
   console.log(url.length);
   if(url.length != redirectUri.length){
     var token = getQueryVariable("id_token");
+    callPowerBIRest(token);
   }
 
   // using '!' as the hashPrefix but can be a character of your choosing
@@ -55,7 +56,7 @@ function callPowerBIRest(token){
         console.log("The token is null");
         return;
     }
-    else{    
+    else{
       var request = new XMLHttpRequest();
 
       request.open('GET', 'https://api.powerbi.com/v1.0/myorg/datasets');
