@@ -52,7 +52,7 @@ function getQueryVariable(variable) {
 }
 
 function callPowerBIRest(token){
-    if(token = null){
+    if(token == null){
         console.log("The token is null");
         return;
     }
