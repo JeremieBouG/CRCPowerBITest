@@ -35,7 +35,7 @@ function getPowerBI()
     var config ={
       tennant : "powerbiUser@crcpb.onmicrosoft.com",
       clientId : "d389ac00-f00d-45d1-bf50-befa84eb805b",
-      redirectUri : "file:///C:/Users/CRC/Desktop/JavaScriptTest/index.html",
+      redirectUri : "http://crcpowerbitest.azurewebsites.net/javaScriptTest/",
       instance : "https://login.microsoftonline.com/f78105d2-b96b-4be9-bda6-06d8a6444a25"
     };
 
