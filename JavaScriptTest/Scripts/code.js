@@ -17,26 +17,21 @@ function getPowerBI()
     var token = getQueryVariable("id_token");
     callPowerBIRest(token);
   }
-
-  // using '!' as the hashPrefix but can be a character of your choosing
-   app.config(['$locationProvider', function($locationProvider) {
-       $locationProvider.html5Mode(true).hashPrefix('!');
-   }]);
-
-
+  else{
     var config ={
       tennant : "powerbiUser@crcpb.onmicrosoft.com",
       clientId : "d389ac00-f00d-45d1-bf50-befa84eb805b",
       redirectUri : redirectUri,
-      instance : "https://login.microsoftonline.com/"//f78105d2-b96b-4be9-bda6-06d8a6444a25/"
+      instance : "https://login.microsoftonline.com/f78105d2-b96b-4be9-bda6-06d8a6444a25/oauth2/token"
     };
 
 
-  var authContext = new AuthenticationContext(config);
+    var authContext = new AuthenticationContext(config);
 
-  authContext.login();
-  authContext.acquireToken ("https://analysis.windows.net/powerbi/api", getPowerBICallback);
-  console.log("got here");
+    authContext.login();
+    authContext.acquireToken ("https://analysis.windows.net/powerbi/api", getPowerBICallback);
+    console.log("got here");
+  }
 }
 
 function getQueryVariable(variable) {
