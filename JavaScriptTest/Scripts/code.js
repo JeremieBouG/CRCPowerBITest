@@ -17,7 +17,7 @@ function getPowerBI()
     var token = getQueryVariable("id_token");
     callPowerBIRest(token);
   }
-  else{
+
     var config ={
       tennant : "powerbiUser@crcpb.onmicrosoft.com",
       clientId : "d389ac00-f00d-45d1-bf50-befa84eb805b",
@@ -31,7 +31,7 @@ function getPowerBI()
     authContext.login();
     authContext.acquireToken ("https://analysis.windows.net/powerbi/api", getPowerBICallback);
     console.log("got here");
-  }
+  
 }
 
 function getQueryVariable(variable) {
