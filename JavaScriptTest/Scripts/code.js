@@ -29,7 +29,7 @@ function getPowerBI()
     var authContext = new AuthenticationContext(config);
 
     authContext.login();
-    authContext.acquireToken (window.location.href, getPowerBICallback);
+    authContext.acquireToken ("https://analysis.windows.net/powerbi/api", getPowerBICallback);
     console.log("got here");
 
 }
