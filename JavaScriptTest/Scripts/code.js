@@ -21,8 +21,12 @@ function getPowerBI()
     var config ={
       tennant : "powerbiUser@crcpb.onmicrosoft.com",
       clientId : "d389ac00-f00d-45d1-bf50-befa84eb805b",
-      redirectUri : redirectUri,
-      instance : "https://login.microsoftonline.com/"//f78105d2-b96b-4be9-bda6-06d8a6444a25/oauth2/token"
+      //redirectUri : redirectUri,
+      //instance : "https://login.microsoftonline.com/",
+      endpoints: {
+          "https://api.powerbi.com": "https://analysis.windows.net/powerbi/api",
+        },
+      requireADLogin: true,
     };
 
 
