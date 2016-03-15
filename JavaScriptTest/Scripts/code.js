@@ -20,7 +20,7 @@ function getPowerBI()
 
     var config ={
       tennant : "powerbiUser@crcpb.onmicrosoft.com",
-      clientId : "818805e5-1dac-4cc2-a63f-ab0b0184c2f6",
+      clientId : "d389ac00-f00d-45d1-bf50-befa84eb805b",
       redirectUri : redirectUri,
       //instance : "https://login.microsoftonline.com/",
       endpoints: {
