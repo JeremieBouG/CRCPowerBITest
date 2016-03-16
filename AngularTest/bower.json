@@ -1,0 +1,18 @@
+{
+  "name": "Angular Test",
+  "homepage": "https://github.com/JeremieBouG/CRCPowerBITest",
+  "authors": [
+    "JeremieBouG <Jeremie.Boudreau2@canada.ca>"
+  ],
+  "description": "Power Bi Rest API Test",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

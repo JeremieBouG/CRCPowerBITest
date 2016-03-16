@@ -1,0 +1,5 @@
+{
+  "directory": "bower_components",
+  "proxy": "http://pwroxy.crc.ca:3128",
+  "https-proxy":"http://proxy.crc.ca:3128"
+}
